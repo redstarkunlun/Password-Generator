@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>自動パスワード生成機</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="password_generator">
+            <h2>自動パスワード生成機</h2>
+            <a href="../index.html"><p>戻る</p></a>
+            <h4>このWebサービスは、<a href="https://github.com/Codex340/Password-Generator">Github</a>でソースコードを公開しています。</h4>
+            <textarea id="password"></textarea><br>
+            <button onclick="password_generate()">生成</button>
+            <button onclick="password_copy()">コピー</button>
+            <h3>オプション</h3>
+            パスワードの長さ<br class="smartphone">
+            <input onclick="password_longer_count()" type="range" value="20" min="10" max="150" step="1" id="password_longer"><span id="number">20</span>文字<br><br>
+            パスワードの種類<br class="smartphone">
+            <input type="checkbox" id="small" checked>小文字<br class="smartphone">
+            <input type="checkbox" id="big" checked>大文字<br class="smartphone">
+            <input type="checkbox" id="num" checked>数字<br class="smartphone">
+            <input type="checkbox" id="symbol" checked>記号<br class="smartphone">
+        </div>
+    </body>
+</html>
